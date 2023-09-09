@@ -10,8 +10,8 @@ const Menu = () => {
   //const token = cookieStore.get("token");
 
   return (
-    <div className="container">
-      <ul className="">
+    <div className="nav">
+      <ul className="menu">
         <li>
           <Link
             className={activeRoute === "/" ? "active-link" : "pending-list"}

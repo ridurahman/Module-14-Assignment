@@ -28,17 +28,23 @@ const page = () => {
   };
 
   return (
-    <div>
+    <div className="center container">
       <h1>Login</h1>
       <form onSubmit={handleSubmit}>
-        <input
-          onChange={(e) => {
-            setFormValues(e.target.value);
-          }}
-          placeholder="Code on Email"
-        />
-        <br />
-        <button type="submit">Login</button>
+        <div className="inputbox">
+          <input
+            type="text"
+            onChange={(e) => {
+              setFormValues(e.target.value);
+            }}
+            placeholder="Code on Email"
+          />
+        </div>
+        <div className="inputbox">
+          <button type="submit" className="btn">
+            Login
+          </button>
+        </div>
       </form>
     </div>
   );

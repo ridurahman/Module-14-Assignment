@@ -6,15 +6,49 @@ body {
   padding: 0;
 }
 .container {
-  margin: auto;
   max-width: 500px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
+
 h1 {
   text-align: center;
 }
-ul {
+/* ul {
   display: flex;
+} */
+
+.nav {
+  margin: 40px 0 0 0;
 }
+.menu {
+  display: flex;
+  justify-content: center;
+}
+.menu > li {
+  margin: 0 5px;
+}
+.menu > li > a {
+  padding: 8px 15px;
+  background-color: #01403a;
+  color: white;
+  border-radius: 6px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+.menu > li > a:hover {
+  background-color: white;
+  color: #01403a;
+}
+
+.menu > li > .active-link {
+  background-color: white;
+  color: #01403a;
+}
+
 li {
   list-style: none;
 }
@@ -22,7 +56,6 @@ a {
   text-decoration: none;
   color: aliceblue;
 }
-
 .home-items {
   display: flex;
 }
@@ -33,6 +66,9 @@ a {
   text-align: center;
   margin: 5px;
   color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .active-link {
   padding: 5px;
@@ -44,4 +80,71 @@ a {
   padding: 5px;
   background-color: #01403a;
   color: white;
+}
+.center {
+  padding: 50px 50px;
+  background: #fff;
+  border-radius: 10px;
+}
+.inputbox {
+  width: 300px;
+  height: 50px;
+  margin: 50px 0;
+}
+
+.inputbox input {
+  width: 100%;
+  border: 2px solid #000;
+  outline: none;
+  background: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 20px;
+}
+.btn {
+  width: 50%;
+  height: 40px;
+  background: #027368;
+  color: #fff;
+  border: #fff;
+  border-radius: 6px;
+  font-size: 20px;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.btn:hover {
+  background: #fff;
+  color: #027368;
+}
+
+.center {
+  max-width: 500px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px auto 0 auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+.center h1 {
+  margin: 0;
+}
+.center form {
+  margin: 30px 0 0 0;
+}
+.inputbox {
+  margin: 0 0 15px 0;
+}
+.inputbox input[type="text"] {
+  border-radius: 6px;
+  transition: 0.3s ease-in-out;
+}
+.inputbox .btn {
+  cursor: pointer;
+}
+.inputbox [type="text"]:focus {
+  box-shadow: 0 0 15px rgba(2, 115, 104, 0.5);
+  border-color: rgb(2, 115, 104);
+  outline: 1px solid rgb(2, 115, 104);
 }
