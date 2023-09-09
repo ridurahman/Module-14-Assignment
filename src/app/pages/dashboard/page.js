@@ -8,6 +8,7 @@ const page = () => {
     const res = await fetch("/api/login");
     const json = await res.json();
     if (json["status"] === true) {
+      window.location.reload();
       route.replace("/pages/registration");
     }
   };

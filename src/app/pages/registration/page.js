@@ -26,9 +26,9 @@ const page = () => {
 
     if (json["status"] === true) {
       console.log("hi");
-      route.push(`/pages/login?email:${formValues.email}`);
+      route.replace(`/pages/login?email=${formValues.email}`);
     } else {
-      alert(json["message"]);
+      alert(json["msg"]);
     }
   };
 
@@ -42,6 +42,7 @@ const page = () => {
           }}
           value={formValues.email}
           placeholder="email"
+          required=""
         />
         <br />
         <input
@@ -50,6 +51,7 @@ const page = () => {
           }}
           value={formValues.password}
           placeholder="password"
+          required=""
         />
         <br />
         <button type="submit">Register</button>
