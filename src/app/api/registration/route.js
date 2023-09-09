@@ -1,5 +1,7 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
+
+// This function take email from request body and sends a mail to that email using nodemailer
 export async function POST(req, res) {
   // const { searchParams } = new URL(req.url);
   // let toEmail = searchParams.get("email");

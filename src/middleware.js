@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { VerifyToken } from "@/app/utility/JWTHelper";
 export async function middleware(req) {
+  //if user has token he can go to dashboard else he will be redirected to login page
   if (req.nextUrl.pathname.startsWith("/pages/dashboard")) {
     try {
       let token = req.cookies.get("token");

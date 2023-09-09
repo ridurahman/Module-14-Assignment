@@ -14,7 +14,7 @@ const Menu = () => {
       <ul className="menu">
         <li>
           <Link
-            className={activeRoute === "/" ? "active-link" : "pending-list"}
+            className={activeRoute === "/" ? "active-link" : ""}
             href="/"
           >
             Home
@@ -26,7 +26,7 @@ const Menu = () => {
               className={
                 activeRoute === "/pages/registration"
                   ? "active-link"
-                  : "pending-list"
+                  : ""
               }
               href="/pages/registration"
             >
@@ -38,7 +38,7 @@ const Menu = () => {
           <li>
             <Link
               className={
-                activeRoute === "/pages/login" ? "active-link" : "pending-list"
+                activeRoute === "/pages/login" ? "active-link" : ""
               }
               href="/pages/login"
             >
@@ -51,7 +51,7 @@ const Menu = () => {
             className={
               activeRoute === "/pages/dashboard"
                 ? "active-link"
-                : "pending-list"
+                : ""
             }
             href="/pages/dashboard"
           >

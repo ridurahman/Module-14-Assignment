@@ -13,9 +13,9 @@ const page = () => {
     }
   };
   return (
-    <div>
+    <div className="container">
       <h1>Dashboard</h1>
-      <button onClick={logoutHandler}>Logout</button>
+      <button onClick={logoutHandler} className="btn">Logout</button>
     </div>
   );
 };

@@ -3,8 +3,8 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="container">
-      <h1>HomePage</h1>
+    <div className="center container">
+      <h1>Home Page</h1>
       <div className="home-items">
         <Link href="/pages/registration">
           <div className="home-div">

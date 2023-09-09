@@ -33,10 +33,11 @@ const page = () => {
   };
 
   return (
-    <div>
+    <div className="center container">
       <h1>Register</h1>
       <form onSubmit={handleSubmit}>
-        <input
+      <div className="inputbox">
+        <input type="text"
           onChange={(e) => {
             handleChange("email", e.target.value);
           }}
@@ -44,8 +45,9 @@ const page = () => {
           placeholder="email"
           required=""
         />
-        <br />
-        <input
+        </div>
+        <div className="inputbox">
+        <input type="text"
           onChange={(e) => {
             handleChange("password", e.target.value);
           }}
@@ -53,8 +55,9 @@ const page = () => {
           placeholder="password"
           required=""
         />
-        <br />
-        <button type="submit">Register</button>
+        </div>
+        <div className="inputbox">
+        <button type="submit" className="btn">Register</button></div>
       </form>
     </div>
   );

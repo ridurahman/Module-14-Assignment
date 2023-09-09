@@ -17,9 +17,6 @@ body {
 h1 {
   text-align: center;
 }
-/* ul {
-  display: flex;
-} */
 
 .nav {
   margin: 40px 0 0 0;
@@ -70,22 +67,7 @@ a {
   align-items: center;
   justify-content: center;
 }
-.active-link {
-  padding: 5px;
-  background-color: #04bfad;
-  color: white;
-}
 
-.pending-list {
-  padding: 5px;
-  background-color: #01403a;
-  color: white;
-}
-.center {
-  padding: 50px 50px;
-  background: #fff;
-  border-radius: 10px;
-}
 .inputbox {
   width: 300px;
   height: 50px;
@@ -116,6 +98,9 @@ a {
   background: #fff;
   color: #027368;
 }
+.btn {
+  cursor: pointer;
+}
 
 .center {
   max-width: 500px;
@@ -140,9 +125,7 @@ a {
   border-radius: 6px;
   transition: 0.3s ease-in-out;
 }
-.inputbox .btn {
-  cursor: pointer;
-}
+
 .inputbox [type="text"]:focus {
   box-shadow: 0 0 15px rgba(2, 115, 104, 0.5);
   border-color: rgb(2, 115, 104);
